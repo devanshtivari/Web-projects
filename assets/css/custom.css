@@ -1,0 +1,22 @@
+.btn btn-primary-three btn-hover-secondary-three{ 
+    border-color: #000000 !important;
+    background-color: #ff0000 !important;
+    color: #fff;
+}
+.section-title text-center aos-init aos-animate {
+    color: #ff0000 !important;
+    
+}
+canvas {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+  }
+  .col-xl-6 col-auto{
+      position: relative;
+      top: 16px;
+  }
+
+
+
