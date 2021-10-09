@@ -1,0 +1,31 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Landing bot with BotEngine.ai</title>
+</head>
+<body>
+    <script type="text/javascript">
+        window._be = window._be || {};
+        window.__be.id = "60dc97109f6f390007269482"; // put your chat widget id here
+
+        var BE_API = window.BE_API || {};
+
+        // open chat widget window after load
+        BE_API.onLoad = function () {
+            BE_API.openChatWidget();
+        };
+
+        (function() {
+            var be = document.createElement('script'); be.type = 'text/javascript'; be.async = true;
+            be.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.botengine.ai/widget/plugin.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(be, s);
+        })();
+    </script>
+
+    <style type="text/css">
+        #botengine-chat {
+            width: 100% !important;
+            text-align: left;
+        }
+    </style>
+</body>

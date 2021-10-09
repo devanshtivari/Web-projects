@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>expanD</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/images/expand logo.jpg"
+      sizes="16x16"
+    />
+
+    <!-- CSS
+        ============================================ -->
+
+    <!-- Vendor CSS (Bootstrap & Icon Font) -->
+    <!-- <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/vendor/font-awesome-pro.min.css">
+        <link rel="stylesheet" href="assets/css/vendor/font-gilroy.css"> -->
+
+    <!-- Plugins CSS (All Plugins Files) -->
+    <!-- <link rel="stylesheet" href="assets/css/plugins/select2.min.css">
+        <link rel="stylesheet" href="assets/css/plugins/perfect-scrollbar.css">
+        <link rel="stylesheet" href="assets/css/plugins/swiper.min.css">
+        <link rel="stylesheet" href="assets/css/plugins/nice-select.css">
+        <link rel="stylesheet" href="assets/css/plugins/ion.rangeSlider.min.css">
+        <link rel="stylesheet" href="assets/css/plugins/photoswipe.css">
+        <link rel="stylesheet" href="assets/css/plugins/photoswipe-default-skin.css">
+        <link rel="stylesheet" href="assets/css/plugins/magnific-popup.css">
+        <link rel="stylesheet" href="assets/css/plugins/slick.css"> -->
+
+    <!-- Main Style CSS -->
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+
+    <!-- Use the minified version files listed below for better performance and remove the files listed above -->
+    <link rel="stylesheet" href="assets/css/vendor/vendor.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins/plugins.min.css" />
+    <link rel="stylesheet" href="assets/css/style.min.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+    <style>
+        body {
+    font-family: "Open Sans", Arial;
+    background: #EEE;
+    text-align: center; }
+    body * {
+      font-weight: 300;
+      margin: 0;
+      padding: 0; 
+      }
+  
+  @keyframes bake-pie {
+    from {
+      transform: rotate(0deg) translate3d(0, 0, 0); } }
+  
+  .pie-chart {
+    font-family: "Open Sans", Arial; }
+    .pie-chart--wrapper {
+      width: 400px;
+      margin: 30px auto;
+      text-align: center; }
+    .pie-chart__pie, .pie-chart__legend {
+      display: inline-block;
+      vertical-align: top; }
+    .pie-chart__pie {
+      position: relative;
+      height: 200px;
+      width: 200px;
+      margin: 10px auto 35px; }
+      .pie-chart__pie::before {
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: 1;
+        width: 100px;
+        height: 100px;
+        background: #EEE;
+        border-radius: 50%;
+        top: 50px;
+        left: 50px; }
+      .pie-chart__pie::after {
+        content: "";
+        display: block;
+        width: 120px;
+        height: 2px;
+        background: rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        box-shadow: 0 0 3px 4px rgba(0, 0, 0, 0.1);
+        margin: 220px auto; }
+  
+  .slice {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    clip: rect(0px, 200px, 200px, 100px);
+    animation: bake-pie 1s; }
+    .slice span {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: black;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      clip: rect(0px, 200px, 200px, 100px); }
+  
+  .pie-chart__legend {
+    display: block;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    background: #FFF;
+    padding: 0.75em 0.75em 0.05em;
+    font-size: 13px;
+    box-shadow: 1px 1px 0 #DDD, 2px 2px 0 #BBB;
+    text-align: left;
+    width: 65%; }
+    .pie-chart__legend li {
+      height: 1.25em;
+      margin-bottom: 0.7em;
+      padding-left: 0.5em;
+      border-left: 1.25em solid black; }
+    .pie-chart__legend em {
+      font-style: normal; }
+    .pie-chart__legend span {
+      float: right; }
+  
+  .pie-charts {
+    display: flex;
+    flex-direction: row; }
+    @media (max-width: 500px) {
+      .pie-charts {
+        flex-direction: column; } }
+  
+    </style>
+    
+  </head>
+
+  <body>
+    <div id="page">
+        <!-- Header Section Start -->
+        <div class="header-section header-shadow sticky-header section">
+            <div class="header-inner">
+                <div class="container position-relative">
+                    <div class="row justify-content-between align-items-center">
+
+                        <!-- Header Logo Start -->
+                        <div class="col-xl-3 col-auto">
+                            <div class="header-logo">
+                                <a href="index.html">
+                                    <img class="dark-logo" src="assets/images/expand final logo.jpg" alt="Learts Logo">
+                                    <img class="light-logo" src="assets/images/expand final logo.jpg" alt="Learts Logo">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Header Logo End -->
+
+                        <!-- Header Main Menu Start -->
+                        <div class="col d-none d-xl-block position-static">
+                            <nav class="site-main-menu menu-hover-1">
+                                <ul>
+                                    <li class="title">
+                                        <a href="web-dev-blog.html"><span class="menu-text" style="font-size: 19px;"><u> Web Development Course</u></span></a>
+                                        
+
+                                        
+                                    </li>
+                                    
+                                    
+                                   
+                                    
+                                    
+                                </ul>
+                            </nav>
+                        </div>
+                        <!-- Header Main Menu End -->
+ <!-- Header Right Start -->
+ <div class="col-xl-3 col-auto">
+    <div class="header-right">
+        <div class="inner">
+
+            <!-- Header Login Start -->
+            
+            <!-- Header Login End -->
+
+            <!-- Header Search Start -->
+            
+            <!-- Header Search End -->
+
+
+            <!-- Header Mobile Menu Toggle Start -->
+            <div class="header-mobile-menu-toggle d-xl-none ml-sm-2">
+                <button class="toggle">
+                    <i class="icon-top"></i>
+                    <i class="icon-middle"></i>
+                    <i class="icon-bottom"></i>
+                </button>
+            </div>
+            <!-- Header Mobile Menu Toggle End -->
+        </div>
+    </div>
+</div>
+<!-- Header Right End -->
+<div class="col-xl-3 col-auto">
+    <div class="header-right">
+        <div class="inner">
+
+            <!-- Header Login Start -->
+            <div class="header-login">
+                <span class="menu-toggle"><a href="profile.html"><i class="far fa-user-circle"></i></a></span>
+            </div>
+            <!-- Header Login End -->
+
+            <!-- Header Search Start -->
+            
+            <!-- Header Search End -->
+
+
+            <!-- Header Mobile Menu Toggle Start -->
+            <div class="header-mobile-menu-toggle d-xl-none ml-sm-2">
+                <button class="toggle">
+                    <i class="icon-top"></i>
+                    <i class="icon-middle"></i>
+                    <i class="icon-bottom"></i>
+                </button>
+            </div>
+            <!-- Header Mobile Menu Toggle End -->
+        </div>
+    </div>
+</div>
+<!-- Header Right End -->
+
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+
+                    </div>
+                
+        <!-- Header Section End -->
+
+       
+<div class="wrapper">
+    <h1>Your Report</h1>
+    <div class="pie-charts">
+      <div class="pieID--micro-skills pie-chart--wrapper">
+        <h2>Lectures Attended</h2>
+        <div class="pie-chart">
+          <div class="pie-chart__pie"></div>
+          <ul class="pie-chart__legend">
+            <li><em>Total Video Lectures</em><span>15</span></li>
+            <li><em>New Videos</em><span>6</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="pieID--categories pie-chart--wrapper">
+        <h2>Categories</h2>
+        <div class="pie-chart">
+          <div class="pie-chart__pie"></div>
+          <ul class="pie-chart__legend">
+            <li><em>Total Notes Available</em><span>768</span></li>
+            <li><em>Notes downloaded</em><span>232</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="pieID--operations pie-chart--wrapper">
+        <h2>Operations</h2>
+        <div class="pie-chart">
+          <div class="pie-chart__pie"></div>
+          <ul class="pie-chart__legend">
+            <li><em>Ampltitude</em><span>486</span></li>
+            <li><em>Coding skills</em><span>156</span></li>
+            <li><em>Assignment marks</em><span>215</span></li>
+            <li><em>Engagement</em><span>143</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="intro2-section section">
+            
+
+    <div class="container">
+        <div class="row row-cols-lg-2 row-cols-1 max-mb-n30">
+
+            <!-- Intro One Content Start -->
+            <div class="col align-self-center max-mb-30" data-aos="fade-up">
+                <div class="intro2-content text-center text-md-left">
+                    <h2 class="title">Hello Learner!!</h2>
+                    <div class="desc">
+                        <p>Great to see you again with us, lets starts</p>
+                    </div>
+                    
+                   
+                </div>
+            </div>
+            <!-- Intro One Content End -->
+
+            <!-- Intro One Course Start -->
+            <div class="col max-mb-30" data-aos="fade-up">
+                <div class="contact-image intro2-image">
+                    <img src="assets/images/Cloud Animation.gif" style=" border-radius: 10%;" alt="">
+
+                    
+                </div>
+            </div>
+            <!-- Intro One Course End -->
+
+        </div>
+    </div>
+
+</div>
+<div class="testimonial-section section section-padding" data-bg-color="#f8f8f8">
+  <div class="container-fluid pl-80 pl-lg-15 pl-md-15 pl-sm-15 pl-xs-15 pr-80 pr-lg-15 pr-md-15 pr-sm-15 pr-xs-15">
+      <!-- Section Title Start -->
+      <div class="section-title text-center" data-aos="fade-up">
+          <span class="sub-title">Notes</span>
+          <h2 class="title">Comprehensive<span> notes </span> for you.</h2>
+      </div>
+      <!-- Section Title End -->
+
+      <!--Testimonial Slider Start -->
+      <div class="testimonial-slider-two swiper-container" data-aos="fade-up">
+          <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                  <div class="testimonial-two testimonial-three max-mb-30">
+                      <div class="content">
+                          <h4 class="title">HTML Chapter 01 </h4>
+                          <a href="https://drive.google.com/file/d/1Y9ev1_R4Y0b3VxlarcvOafB5hBFF6O3j/view?usp=sharing" class="btn btn-primary-three btn-hover-secondary-three" target="_blank">Get notes</a>
+                      </div>
+                      
+                  </div>
+              </div>
+
+              <div class="swiper-slide">
+                  <div class="testimonial-two testimonial-three max-mb-30">
+                      <div class="content">
+                          <h4 class="title">HTML Chapter 02</h4>
+                          <a href="https://drive.google.com/file/d/1MX1WV7x1VVi5Ru6fSzYQKTSY7snq_qgu/view?usp=sharing" class="btn btn-primary-three btn-hover-secondary-three" target="_blank">Get notes</a>
+                      </div>
+                      
+                  </div>
+              </div>
+
+              <div class="swiper-slide">
+                  <div class="testimonial-two testimonial-three max-mb-30">
+                      <div class="content">
+                          <h4 class="title">HTML Chapter 03</h4>
+                          <a href="https://drive.google.com/file/d/1RFJ0xhgBU30HDYgP7IGYmTPX1mpvT6E_/view?usp=sharing" class="btn btn-primary-three btn-hover-secondary-three" target="_blank">Get notes</a>
+                      </div>
+                      
+                  </div>
+              </div>
+
+              <div class="swiper-slide">
+                  <div class="testimonial-two testimonial-three max-mb-30">
+                      <div class="content">
+                          <h4 class="title">HTML Chapter 04</h4>
+                          <a href="https://drive.google.com/file/d/15XVSAqyd6rQ-Ot-qLjTQV5ZeLq6ZO4wC/view?usp=sharing" class="btn btn-primary-three btn-hover-secondary-three" target="_blank">Get notes</a>
+                      </div>
+                      
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonial-two testimonial-three max-mb-30">
+                    <div class="content">
+                        <h4 class="title">HTML Chapter 05</h4>
+                        <a href="https://drive.google.com/file/d/1t_FvBU82bcp3JmESI058s_wbm9OtIUY_/view?usp=sharing" class="btn btn-primary-three btn-hover-secondary-three" target="_blank">Get notes</a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-two testimonial-three max-mb-30">
+                  <div class="content">
+                      <h4 class="title">HTML Chapter 06</h4>
+                      <a href="https://drive.google.com/file/d/1wyMuNIMiPQ8d7eXI9ctMmDFcwHINh59u/view?usp=sharing" class="btn btn-primary-three btn-hover-secondary-three" target="_blank">Get notes</a>
+                  </div>
+                  
+              </div>
+          </div>
+            
+
+
+          </div>
+          <div class="swiper-pagination"></div>
+      </div>
+      <!--Testimonial Slider End -->
+  </div>
+</div>
+<div class="testimonial-section section section-padding" data-bg-color="#f8f8f8">
+  <div class="container-fluid pl-80 pl-lg-15 pl-md-15 pl-sm-15 pl-xs-15 pr-80 pr-lg-15 pr-md-15 pr-sm-15 pr-xs-15">
+      <!-- Section Title Start -->
+      <div class="section-title text-center" data-aos="fade-up">
+          <span class="sub-title">Videos</span>
+          <h2 class="title">Freshly<span> brewed videos </span> for you.</h2>
+      </div>
+      <!-- Section Title End -->
+
+      <!--Testimonial Slider Start -->
+      <div class="testimonial-slider-two swiper-container" data-aos="fade-up">
+          <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                  <div class="testimonial-two testimonial-three max-mb-30">
+                      <div class="content">
+                          <h4 class="title">HTML Basics </h4>
+                          <iframe width="360" height="315" src="https://www.youtube.com/embed/MDLn5-zSQQI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      </div>
+                      
+                  </div>
+              </div>
+
+              <div class="swiper-slide">
+                  <div class="testimonial-two testimonial-three max-mb-30">
+                      <div class="content">
+                          <h4 class="title">HTMl Advanced</h4>
+                          <iframe width="360" height="315" src="https://www.youtube.com/embed/31HTSB8X7FI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      </div>
+                      
+                  </div>
+              </div>
+
+              <div class="swiper-slide">
+                  <div class="testimonial-two testimonial-three max-mb-30">
+                      <div class="content">
+                          <h4 class="title">CSS Basics</h4>
+                          <iframe width="360" height="315" src="https://www.youtube.com/embed/1PnVor36_40" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      </div>
+                      
+                  </div>
+              </div>
+
+              <div class="swiper-slide">
+                  <div class="testimonial-two testimonial-three max-mb-30">
+                      <div class="content">
+                          <h4 class="title">CSS Advanced</h4>
+                          <iframe width="360" height="315" src="https://www.youtube.com/embed/1haoknb4m6k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      </div>
+                      
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonial-two testimonial-three max-mb-30">
+                    <div class="content">
+                        <h4 class="title">JavaScript Basics</h4>
+                        <iframe width="360" height="315" src="https://www.youtube.com/embed/W6NZfCO5SIk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-two testimonial-three max-mb-30">
+                  <div class="content">
+                      <h4 class="title">JavaScript Advanced</h4>
+                      <iframe width="360" height="315" src="https://www.youtube.com/embed/IljVmcDDrOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  
+              </div>
+          </div>
+            
+
+
+          </div>
+          <div class="swiper-pagination"></div>
+      </div>
+      <!--Testimonial Slider End -->
+  </div>
+</div>
+<div class="cta-section section section-padding" data-bg-color="#f5f5f5">
+  <div class="container">
+      <div class="row">
+          <div class="col-12">
+              <div class="cta-content text-center">
+                  <span class="sub-title"><span>Lacking Motivation </span></span>
+                  <h2 class="title">See what Mark have to say</h2>
+                  <a href="https://youtu.be/YwHXniAUMQo" class="btn btn-primary btn-hover-secondary btn-width-300" target="_blank">Click to listen</a>
+
+                  <!-- Animation Shape Start -->
+                  
+                  <div class="shape shape-2 scene">
+                      <span data-depth="4"><img src="assets/images/—Pngtree—programming development_3101244.png" alt="" height="130px" width="130px"></span>
+                  </div>
+                  <div class="shape shape-3 scene">
+                      <span data-depth="4"><img src="assets/images/—Pngtree—vector programming icon_4101344.png" alt="" height="130px" width="130px"></span>
+                  </div>
+                  <!-- Animation Shape End -->
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+        <!-- JS
+============================================ -->
+
+    <!-- Vendors JS -->
+    <!-- <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+<script src="assets/js/vendor/jquery-3.4.1.min.js"></script>
+<script src="assets/js/vendor/jquery-migrate-3.1.0.min.js"></script>
+<script src="assets/js/vendor/bootstrap.bundle.min.js"></script> -->
+
+    <!-- Plugins JS -->
+    <!-- <script src="assets/js/plugins/parallax.min.js"></script>
+<script src="assets/js/plugins/jquery.ajaxchimp.min.js"></script> -->
+
+    <!-- Use the minified version files listed below for better performance and remove the files listed above -->
+    <script src="assets/js/vendor/vendor.min.js"></script>
+    <script src="assets/js/plugins/plugins.min.js"></script>
+
+    <!-- Main Activation JS -->
+    <script src="assets/js/main.js"></script>
+    <script>
+        function sliceSize(dataNum, dataTotal) {
+    return (dataNum / dataTotal) * 360;
+  }
+  
+  function addSlice(id, sliceSize, pieElement, offset, sliceID, color) {
+    $(pieElement).append("<div class='slice "+ sliceID + "'><span></span></div>");
+    var offset = offset - 1;
+    var sizeRotation = -179 + sliceSize;
+  
+    $(id + " ." + sliceID).css({
+      "transform": "rotate(" + offset + "deg) translate3d(0,0,0)"
+    });
+  
+    $(id + " ." + sliceID + " span").css({
+      "transform"       : "rotate(" + sizeRotation + "deg) translate3d(0,0,0)",
+      "background-color": color
+    });
+  }
+  
+  function iterateSlices(id, sliceSize, pieElement, offset, dataCount, sliceCount, color) {
+    var
+      maxSize = 179,
+      sliceID = "s" + dataCount + "-" + sliceCount;
+  
+    if( sliceSize <= maxSize ) {
+      addSlice(id, sliceSize, pieElement, offset, sliceID, color);
+    } else {
+      addSlice(id, maxSize, pieElement, offset, sliceID, color);
+      iterateSlices(id, sliceSize-maxSize, pieElement, offset+maxSize, dataCount, sliceCount+1, color);
+    }
+  }
+  
+  function createPie(id) {
+    var
+      listData      = [],
+      listTotal     = 0,
+      offset        = 0,
+      i             = 0,
+      pieElement    = id + " .pie-chart__pie"
+      dataElement   = id + " .pie-chart__legend"
+  
+      color         = [
+        "cornflowerblue",
+        "olivedrab",
+        "orange",
+        "tomato",
+        "crimson",
+        "purple",
+        "turquoise",
+        "forestgreen",
+        "navy"
+      ];
+  
+    color = shuffle( color );
+  
+    $(dataElement+" span").each(function() {
+      listData.push(Number($(this).html()));
+    });
+  
+    for(i = 0; i < listData.length; i++) {
+      listTotal += listData[i];
+    }
+  
+    for(i=0; i < listData.length; i++) {
+      var size = sliceSize(listData[i], listTotal);
+      iterateSlices(id, size, pieElement, offset, i, 0, color[i]);
+      $(dataElement + " li:nth-child(" + (i + 1) + ")").css("border-color", color[i]);
+      offset += size;
+    }
+  }
+  
+  function shuffle(a) {
+      var j, x, i;
+      for (i = a.length; i; i--) {
+          j = Math.floor(Math.random() * i);
+          x = a[i - 1];
+          a[i - 1] = a[j];
+          a[j] = x;
+      }
+  
+      return a;
+  }
+  
+  function createPieCharts() {
+    createPie('.pieID--micro-skills' );
+    createPie('.pieID--categories' );
+    createPie('.pieID--operations' );
+  }
+  
+  createPieCharts();
+  
+    </script>
+    
+  </body>
+</html>
