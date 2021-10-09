@@ -1,3 +1,3 @@
 # Web-projects
 
-My full fromt end project about a coaching institute.
+My full front end project about a coaching institute.
